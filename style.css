@@ -1,0 +1,168 @@
+/* reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* veriables */
+:root {
+  --bgColor: #596d48;
+  --borderColor: #e5e7eb;
+}
+
+/* font */
+@font-face {
+  font-family: Norse;
+  src: url(https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf);
+}
+.logoName {
+  font-family: Norse;
+  font-size: 5rem;
+  color: var(--borderColor);
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+/* style */
+.imageCon {
+  min-width: 35%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+}
+.imageCon > p {
+  font-weight: lighter;
+  font-size: small;
+  color: var(--borderColor);
+  position: relative;
+  top: 10rem;
+}
+.fullLogo > img {
+  height: 100px;
+  width: 83px;
+}
+.fullLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.4rem 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  display: flex;
+  width: max(70%, 50rem);
+  height: 100vh;
+  align-items: center;
+  background-color: var(--borderColor);
+}
+button {
+  background-color: var(--bgColor);
+}
+
+form {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 40px;
+}
+
+.intro {
+  height: 35vh;
+  padding-top: 5rem;
+  font-size: large;
+}
+.intro p {
+  padding-top: 1rem;
+}
+
+.formMid {
+  height: 30vh;
+  background-color: white;
+  margin: -40px;
+  padding: 30px 40px;
+}
+.inputsGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.formFoot {
+  height: 35vh;
+  padding-top: 5rem;
+}
+
+p {
+  font-weight: bold;
+}
+label {
+  display: block;
+}
+input {
+  border-color: var(--borderColor);
+}
+span {
+  font-style: italic;
+}
