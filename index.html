@@ -17,7 +17,13 @@
           />
           <div class="logoName">ODIN</div>
         </div>
-        <p>Image by Halie West on Unsplash</p>
+        <p>
+          Image by Halie West on
+          <a
+            href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA"
+            >Unsplash</a
+          >
+        </p>
       </div>
       <form>
         <div class="intro">
@@ -29,38 +35,39 @@
           <p>You <span>know</span> you want to.</p>
         </div>
         <div class="formMid">
-          <p>Let's do this!</p>
-          <div class="inputsGrid">
-            <div>
-              <label for="firstName">First Name</label>
+          <p class="paddingLeft">Let's do this!</p>
+          <div class="inputsFlex">
+            <div class="paddingLeft">
+              <label for="firstName">First Name *</label>
               <input type="text" name="" id="firstName" required />
-            </div>
-            <div>
-              <label for="lastName">Last Name</label>
-              <input type="text" name="" id="lastName" required />
-            </div>
 
-            <div>
-              <label for="emailAdress">Email Adress</label>
+              <label for="emailAdress">Email Adress *</label>
               <input type="email" name="" id="emailAdress" required />
-            </div>
-            <div>
-              <label for="phoneNumber">Phone Number</label>
-              <input type="number" name="" id="phoneNumber" />
-            </div>
-            <div>
-              <label for="password">Password</label>
+
+              <label for="password">Password *</label>
               <input type="password" name="" id="password" required />
             </div>
-            <div>
-              <label for="password">Confirm Password</label>
+
+            <div class="paddingLeft">
+              <label for="lastName">Last Name *</label>
+              <input type="text" name="" id="lastName" required />
+
+              <label for="phoneNumber">Phone Number</label>
+              <input type="number" name="" id="phoneNumber" />
+
+              <label for="password">Confirm Password *</label>
               <input type="password" name="" id="Confirmation" required />
             </div>
           </div>
         </div>
         <div class="formFoot">
-          <button>Create Account</button>
-          <p>Already have an account? Log in</p>
+          <input
+            name="submit"
+            type="submit"
+            class="submit"
+            value="Create Account"
+          />
+          <p>Already have an account? <span>Log in</span></p>
         </div>
       </form>
     </div>
